@@ -49,3 +49,16 @@ messageClose.addEventListener("click",function() {
 visionClose.addEventListener("click",function() {
     vision.classList.add('hidden');
 });
+
+
+
+// scroll
+
+const fixedNavbar = document.getElementById('fixed-navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                fixedNavbar.classList.add('scroll');
+            } else {
+                fixedNavbar.classList.remove('scroll');
+            }
+        });

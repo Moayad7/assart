@@ -18,63 +18,63 @@
     
 </head>
 <body class="scroll-behavior: smooth;">
+    <header class="fixed w-full z-[999]" id="fixed-navbar">
+        <nav class=" w-full absolute z-[999] flex items-center navbar px-4 lg:px-52 fixed-navbar" id="navbar">
+            <div class=" px-4 sm:px-6 lg:px-8 w-full">
+                <div class="flex justify-center lg:justify-between items-center w-full">
+                    
+                    <div>
+                        <img class="w-28 p-2" src="./assets/logo/logo-01.svg" alt="">
+                    </div>
 
-    <nav class=" w-full absolute z-[999] flex items-center navbar px-4 lg:px-52 bg-gradient-to-b from-[#fff8] via-[#fff4] to-[#fff0] border-b border-[#ffffff11]  text-[#255b51] lg:text-[#fff]" id="navbar">
-        <div class=" px-4 sm:px-6 lg:px-8 w-full">
-            <div class="flex justify-center lg:justify-between items-center w-full">
-                
-                <div>
-                    <img class="w-28 p-2" src="./assets/logo/logo-01.svg" alt="">
-                </div>
+                    
+                    <div id="navbar-btn" class="text-3xl absolute left-8 top-5 cursor-pointer lg:hidden ">
+                        <span id="navbar-btn-icon" class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
 
-                
-                <div id="navbar-btn" class="text-3xl absolute left-8 top-5 cursor-pointer lg:hidden ">
-                    <span id="navbar-btn-icon" class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
+                    <div  class="flex gap-4">
 
-                <div class="text-[#255b6a] flex gap-4 lg:text-[#fff]">
-
-                    <ul class=" 
-                     flex flex-col lg:flex-row items-center lg:pb-0 pb-18 absolute lg:static  lg:z-auto z-[-1] w-full lg:w-auto lg:p-0 p-16 transition-all duration-500 ease-out top-[-1920px] right-0 lg:h-auto gap-8"
-                        id="navbar-list">
-                        <div>
-                            <img class="blocked  lg:hidden w-28 p-2" src="./assets/logo/logo-01.svg" alt="">
-                        </div> 
-                        <div class="text-[#255b51] blocked lg:hidden flex justify-between items-center z-9999">
-                            <span id="navbar-btn-close" class="cursor-pointer material-symbols-outlined">
-                                close
-                            </span>
-                        </div>
-                        <a href="./index.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">الرئيسية</a>
-                        <a href="./about.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">نبذة عنا</a>
-
-                        <a href="./services.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">الاعمال</a>
-                        <a href="./teamwork.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">فريق العمل</a>
-                        <a href="./contact.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">المدونة</a>
-                        <a href="./contact.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                            id="">التواصل</a>
+                        <ul class=" text-[#255b6a] lg:text-[#253d38] 
+                        flex flex-col lg:flex-row items-center lg:pb-0 pb-18 absolute lg:static  lg:z-auto z-[-1] w-full lg:w-auto lg:p-0 p-16 transition-all duration-500 ease-out top-[-1920px] right-0 lg:h-auto gap-8"
+                            id="navbar-list">
                             <div>
-                                <button class="px-4 py-2 bg-[#ffca9e] hover:bg-[#a37957] text-[#255b51] hover:text-[#fff] duration-300 rounded">english</button>
+                                <img id="navbarLogo" class="blocked  lg:hidden w-28 p-2" src="./assets/logo/logo-01.svg" alt="">
+                            </div> 
+                            <div class="text-[#255b51] blocked lg:hidden flex justify-between items-center z-9999">
+                                <span id="navbar-btn-close" class="cursor-pointer material-symbols-outlined">
+                                    close
+                                </span>
                             </div>
-                    </ul>  
+                            <a href="./index.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">الرئيسية</a>
+                            <a href="./about.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">نبذة عنا</a>
+
+                            <a href="./services.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">الاعمال</a>
+                            <a href="./teamwork.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">فريق العمل</a>
+                            <a href="./contact.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">المدونة</a>
+                            <a href="./contact.html"
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                id="">التواصل</a>
+                                <div>
+                                    <button class="px-4 py-2 bg-[#ffca9e] hover:bg-[#a37957] text-[#255b51] hover:text-[#fff] duration-300 rounded">english</button>
+                                </div>
+                        </ul>  
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <!-- hero section -->
 
     <section class=" bg-[url('./assets/pictures-02.webp')] bg-cover bg-no-repeat bg-center xl:h-screen w-full  ">
