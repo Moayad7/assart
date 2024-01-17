@@ -10,6 +10,15 @@ const fixedNavbar = document.getElementById('fixed-navbar');
             }
         });
 
+const fixedNavbar1 = document.getElementById('fixed-navbar1');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 1000) {
+                fixedNavbar1.classList.add('scroll');
+            } else {
+                fixedNavbar1.classList.remove('scroll');
+            }
+        });
+
 
         AOS.init();
 

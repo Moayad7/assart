@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assart</title>
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     
     <!-- google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- main css -->
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="stylesheet" href="css/main.css">
     
 </head>
@@ -56,10 +57,10 @@
 
                             <a href="./services.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                                id="">الاعمال</a>
+                                id="">الخدمات</a>
                             <a href="./team.html"
-                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                                id="">الإدارة العليا</a>
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] "
+                                id="">الهيئة الإدارية العليا</a>
                             <a href="./blog.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
                                 id="">الأخبار</a>
@@ -81,30 +82,50 @@
     
     <!-- about -->
     <section class="mt-20  w-full relative overflow-hidden">
-        <div><img class="w-40 absolute top-[10px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
-        <div><img class="w-40 absolute bottom-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
-        <div><img class="w-10 lg:w-24 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div>
+        <!-- <div><img class="w-40 absolute top-[10px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
+        <div><img class="w-40 absolute bottom-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
+        <div><img class="w-10 opacity-50 lg:w-24 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div>
         <div>
             <div>
                 <div class="grid py-16 px-8 lg:px-52 ">
                     <div class=" relative mb-16">
                     
-                        <p class=" text-[#a37957]">____________ قمم السراة </p>
-                        <h1 class="text-3xl font-bold text-[#255b51] py-4">الإدارة العليا</h1>
+                        <!-- <p class=" text-[#a37957]">____________ قمم السراة </p> -->
+                        <h1 class="text-3xl font-bold text-[#255b51] py-4">الهيئة الإدارية العليا</h1>
                         <!-- <p class="text-lg font-light text-[#255b51] py-2 w-auto lg:w-2/3">
 
                         </p> -->
                         
                     </div>
-
                     <div class=" relative">
                     
                        
-                        <div class="grid md:grid-cols-2 py-4 space-y-4">
-                            <div class="flex items-center">
+                        <div class="grid md:grid-cols-2 py-4 pb-36 space-y-4">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
-                            <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-01.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="w-20 me-4"><img class="w-20  " src="./assets/team/New folder/team-01.jpg" width="100%" height="100%" alt=""></span>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-01.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            معالي المهندس رئيس مجلس الإدارة ورئيس اللجنة التنفيذية / عبد الله بن مهدي الجالي
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                            أمين منطقة عسير
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    أكثر من 21 عام خبرة في مجال الإدارة تولى عدة مناصب إدارية منها مدير الصيانة والتشغيل مسؤول التأهيل المسبق
+                                    وعلاقات الموردين بشركة أرامكو ومدير تجاري رئيسي ( CCO) في البريد السعودي (سبل)، وعمل مستشار لوزير الشؤون البلدية
+                                    والقروية حاصل على درجة البكالوريوس في الهندسة المكانيكية من جامعة اريزونا، الولايات المتحدة الإمريكية، وحصل على
+                                    درجة الماجستير في إدارة الأعمال من جامعة الملك فهد للبترول والمعادن.
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         م.عبدالله بــن مــهـدي الــجــــالــــي
                                     </p>
@@ -112,12 +133,34 @@
                                         رئيس مجلس الإدارة
                                     </p>
                                 </div>
+                                
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-02.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-02.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ. طارق بــن عبدالهادي القـحـطانـي
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                            نائب رئيس مجلس الإدارة
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    رئيس مجلس إدارة مجموعة شركات ومصانع عبد الهادي عبد الله القحطاني وأولاده،<br>
+ خبرة واسعة في مجال الإدارة لدى العديد من الشركات (شركة عبد الهادي القحطاني وأولاده، الشركة العربية للخدمات التجارية (أركو للتأمين)).
+<br>عضو في عدة مجالس. 
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         أ. طارق بــن عبدالهادي القـحـطانـي
                                     </p>
@@ -127,22 +170,33 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
-                            <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
-                            <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-10.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
-                                    <p>
-                                        أ.فـــايـــز بـــن ســعــيــد الشهراني
-                                    </p>
-                                    <p class="text-[#a37957]">
-                                        الرئيس التنفيذي                                    </p>
-                                </div>
-                            </div>
                             
-                            <div class="flex items-center">
+                            
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-03.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-03.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ. ســلامـــة مــلــهـــي بن سعيدان
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                            ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    الرئيس التنفيذي لشركة الاستثمار القابضة، <br><br>
+                                    خبرة واسعة في مجال الإدارة لعدة شركات منها (شركة الاستثمار القابضة ، صندوق الاستثمارات العقارية). 
+                                    عضو في عدة مجالس شركات<br><br>
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         أ. ســلامـــة مــلــهـــي بن سعيدان
                                     </p>
@@ -152,10 +206,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-04.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-04.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            د.مـحـمــد بــن عمر العـبـداللــطـيـف
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    المدير العام لإدارة الحوكمة والامتثال لشركة الاتصالات السعودية (سابقا)<br><br>
+ أكثر من عشرين عاما من الخبرة الواسعة في مجال الإدارة وذلك من خلال استلام المناصب الإدارية لدى العديد من الشركات ومنها (شركة الاتصالات السعودية) و (شركة الغاز والتصنيع الاهلية)<br><br>
+عضو في عدة مجالس شركات.
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         د.مـحـمــد بــن عمر العـبـداللــطـيـف
                                     </p>
@@ -165,10 +240,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-05.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-05.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ.فــهــــد بـــن عبدالله بـــــن دخــيــل
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    رئيس مجلس إدارة البلاد كابيتال،<br><br>
+ أكثر من عشرين عام من الخبرة الواسعة في المجال المصرفي وذلك من خلال استلامه المناصب الإدارية لدى العديد من البنوك.<br><br>
+عضو في عدة مجالس ومنها شركة المقر (شركة أمانة منطقة المدينة المنورة). 
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         أ.فــهــــد بـــن عبدالله بـــــن دخــيــل
                                     </p>
@@ -178,10 +274,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-06.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-06.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            م.عبدالمجيد بن عبدالرحـمن العسكر
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    يعمل حاليا كمساعد وكيل الوزارة للخصخصة و الاستدامة المالية في وزارة الشوون البلدية و القروية .<br><br>
+ مسؤول تنفيذي يتمتع بخبرة واسعة في مجال الاستثمار البلدي والعقاري والتخطيط الاستراتيجي والتمييز التشغيلي<br><br>
+عضو مجلس إدارة شركة أمانة منطقة القصيم
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         م.عبدالمجيد بن عبدالرحـمن العسكر
                                     </p>
@@ -191,10 +308,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-07.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-07.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ.وهــــدان ســلـيـمــــان الـقــاضـي
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    رئيس القطاع التجاري في صندوق التنمية السياحي.<br><br>
+خبرة واسعة لأكثر من عشرين عاماً في مجال الإدارة من خلال استلامه العديد من المناصب الإدارية لدى العديد من الشركات ومنها (ابامي للاستشارات والتدريب، شركة الاتصالات السعودية)،<br><br>
+ عضو في عدة مجالس ولجان شركات. 
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         أ.وهــــدان ســلـيـمــــان الـقــاضـي
                                     </p>
@@ -204,10 +342,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-08.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-08.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            م.بـــنـــدر عــبــدالــرحـمن الــزامـــــل
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    نائب رئيس _ مجموعة الزامل القابضة وهو الرئيس في شركة مجموعة الزامل القابضة. <br><br>
+خبرة واسعة في مجال الإدارة، وذلك من خلال خبرة العمل المكتسبة وتولية عدة مناصب في (مجموعة الزامل القابضة) <br><br>
+عضو في عدة مجالس شركات. 
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         م.بـــنـــدر عــبــدالــرحـمن الــزامـــــل
                                     </p>
@@ -217,10 +376,31 @@
                                 </div>
                             </div>
                             
-                            <div class="flex items-center">
+                            <div class="flex items-center tooltip-container">
                             <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
                             <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-09.jpg" width="100%" height="100%" alt=""></span>
-                                <div>
+                            <span class="tooltip p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-09.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ.نــــاصــــر صــــــالــــح الــخــلــيــوي
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                        ً عضوا
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    المالك والرئيس التنفيذي لمجموعة بودل للفنادق والمنتجعات.<br><br>
+أكثر من عشرين عام من الخبرة المخصصة في الإدارة والرئاسة التنفيذية.<br><br>
+عضو في عدة جمعيات ولجان سياحة. 
+
+                                </p>
+                            </span>
+                                <div class="text">
                                     <p>
                                         أ.نــــاصــــر صــــــالــــح الــخــلــيــوي
                                     </p>
@@ -230,6 +410,39 @@
                                 </div>
                             </div>
                             
+                            <div class="flex items-center tooltip-container">
+                                <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span>
+                                <span class="w-20 me-4"><img class="w-full  " src="./assets/team/New folder/team-10.jpg" width="100%" height="100%" alt=""></span>
+                                <span class="tooltip z-[99999999999999] p-5 rounded bg-[#fff]">
+                                <div class="flex gap-4">
+                                    <div class="w-80 md:w-40">
+                                        <img class="w-full  " src="./assets/team/New folder/team-10.jpg" width="100%" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="pb-2 font-bold text-[#255b51]">
+                                            أ.فـــايـــز بـــن ســعــيــد الشهراني
+                                        </h1>
+                                        <p class="pb-4 text-[#a37957]">
+                                            الرئيس التنفيذي                                    
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-[#255b51]">
+                                    خبرة لأكثر من ١٧ عاما في المجال المصرفي وعمليات النقل الجوي، عمل مديرًا عامًا للمراجعة الداخلية في الشركة السعودية للخدمات الارضية، ثم انتقل مستشارًا في امانة منطقة عسير ورئيس مشروع تأسيس شركة قمم السراة وأمين مجلس الإدارة.<br><br>
+حاصل على درجة الماجستير في الاقتصاد والتمويل من الولايات المتحدة الامريكية.
+
+                                </p>
+                            </span>
+                                    <div>
+                                        <p>
+                                            أ.فـــايـــز بـــن ســعــيــد الشهراني
+                                        </p>
+                                        <p class="text-[#a37957]">
+                                            الرئيس التنفيذي                                    
+                                        </p>
+                                    </div>
+                                </div>
+                                
                         </div>
 
                         </p>
@@ -252,34 +465,16 @@
                     </a>
                     <div class="py-8">
                         <div class="flex gap-4">
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/facebook-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/twitter-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/instagram-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/youtube-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/linkedin-01.svg" alt=""></a>
+                            <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/facebook-01.svg" alt="facebook"></a>
+                            <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/x.svg" alt="twitter"></a>
+                            <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/instagram-01.svg" alt="instagram"></a>
+                            <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/youtube-01.svg" alt="youtube"></a>
+                            <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/linkedin-01.svg" alt="linkedin"></a>
+                            <a target="_blank" href="https://www.google.com/maps/place/18%C2%B013'03.5%22N+42%C2%B029'56.2%22E/@18.2174507,42.4995506,18z/data=!4m4!3m3!8m2!3d18.2176389!4d42.4989444?hl=ar&entry=ttu"><img class="w-8" src="./Assets/socialMedia/location.svg" alt="location"></a>
                         </div>
                     </div>
 
-                    <ul class="py-2 text-[#fff] text-xs lg:text-lg gap-2 lg:gap-4 flex flex-warp">
-                        <a href="./index.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الرئيسية</a>
-                        <a href="./about.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">نبذة عنا</a>
-                        <a href="./services.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الاعمال</a>
-                        <a href="./team.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الإدارة العليا</a>
-                        <a href="./blog.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الأخبار</a>
-                        <a href="./contact.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">التواصل</a>
-                    </ul>  
+                     
                     <div class="py-2 flex text-[#fff] text-center text-xs items-center">
                         
                         <p>2023 جميع الحقوق محفوظة لشركة <a href="index.html" class="uppercase">قمم السّراة</a> </p>
@@ -308,8 +503,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/tailwind.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

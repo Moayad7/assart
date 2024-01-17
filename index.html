@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assart</title>
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
     <!-- google icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- main css -->
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
-<body>
-    <header class="fixed w-full z-[999]" id="fixed-navbar">
-        <nav class=" w-full absolute z-[999] flex items-center navbar px-4 lg:px-52 fixed-navbar bg-[#fff1] border-b border-[#fff6]"
+<body >
+    <header class="fixed w-full z-[999]" id="fixed-navbar1">
+        <nav class=" w-full absolute z-[999] flex items-center navbar px-4 lg:px-52 fixed-navbar border-b border-[#fff3]"
             id="navbar">
             <div class=" px-4 sm:px-6 lg:px-8 w-full">
                 <div class="flex justify-center lg:justify-between items-center w-full">
@@ -55,7 +53,7 @@
                                 </span>
                             </div>
                             <a href="./index.html"
-                                class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
+                                class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] "
                                 id="">الرئيسية</a>
                             <a href="./about.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
@@ -63,10 +61,10 @@
 
                             <a href="./services.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                                id="">الاعمال</a>
+                                id="">الخدمات</a>
                             <a href="./team.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
-                                id="">الإدارة العليا</a>
+                                id="">الهيئة الإدارية العليا</a>
                             <a href="./blog.html"
                                 class="hover:text-[#a37957] duration-300 border-b-2 border-transparent hover:border-[#a37957] "
                                 id="">الأخبار</a>
@@ -85,21 +83,23 @@
     </header>
 
 
-    <div class="snap-y snap-mandatory overflow-y-scroll h-screen duration-1000">
+    <div class="snap-y snap-mandatory  duration-1000" >
     <!-- hero section -->
 
     <section class="snap-start bg-[url('./assets/pictures-02.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-screen w-full duration-1000 ">
         <div class="relative h-full overflow-hidden">
-            <div><img class="w-40 absolute bottom-[100px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div>
+            <!-- <div><img class="w-40 absolute bottom-[100px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div> -->
             <!-- <div><img class="w-44 absolute top-[80px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div> -->
-            <div><img class="w-24 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div>
+            <div><img class="w-16 opacity-50 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div>
             <div class="grid h-full w-full   bg-gradient-to-b from-[#255b51cc] to-[#255b5100]  px-8 lg:px-52 place-items-center">
 
                 <div class="grid place-items-center h-full ">
-                    <div class="w-full relative xl:col-span-2">
+                    <div class="w-full relative xl:col-span-2 text-center">
 
-                        <p class=" text-[#ffca9e] lg:text-3xl">____________ قمم السراة </p>
-                        <h1 class="text-3xl font-bold text-[#fff] py-4">الذراع الاستثماري لأمانة منطقة عسير</h1>
+                        <p class=" text-[#ffca9e] lg:text-3xl">قمم السراة </p>
+                        <h1 class="text-3xl font-bold text-[#fff] py-4">
+                            طريقك للاستثمار في القطاع البلدي والعقاري  في منطقة عسير
+                        </h1>
                         <!-- <p class="text-lg font-light text-[#fff] py-2 w-auto lg:w-2/3">تعتبر الذراع الاستثماري لأمانة منطقة عسير ذات أهداف تنموية
                         ُ وتطويرية تمكن من تحسين البيئة الاستثمارية في القطاع
                         البلدي ، ورفع مساهمة القطاع الخاص في تنمية المدن</p> -->
@@ -124,32 +124,26 @@
 
 
     <section id="section1" class="snap-start overflow-hidden bg-[url('./assets/pictures-02.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-screen relative duration-1000">
-        <div><img class="w-40 absolute bottom-[100px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div>
-        <div><img class="w-40 absolute top-[100px] left-[-50px]" src="./assets/circles-05.svg" alt=""></div>
+        <!-- <div><img class="w-40 absolute bottom-[100px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div>
+        <div><img class="w-40 absolute top-[100px] left-[-50px]" src="./assets/circles-05.svg" alt=""></div> -->
             <!-- <div><img class="w-44 absolute top-[80px] right-[-50px]" src="./assets/circles-05.svg" alt=""></div> -->
-            <!-- <div><img class="w-24 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div> -->
+            <div><img class="w-24 opacity-50 absolute bottom-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div>
 <div class="grid place-items-center h-full relative px-8 lg:px-52">
     <div class="">
         <div>
             <div class="grid lg:flex justify-center items-center gap-8 h-auto">
-                <div class="grid place-items-center"><img class=" w-40 lg:w-96"
+                <div class="grid place-items-center"><img class=" w-40 lg:w-[800px]"
                     src="./assets/team/New folder/team-01.jpg" alt="engineer-01"></div>
-                <div class="bg-[#ffca9e44] h-full flex justify-center relative">
+                <div class="bg-[#fff5] h-full flex justify-center relative">
                     
                     <div class="p-8 pt-8 space-y-4">
                         <div class="">
-                            <p>كــلــمــة
-                                رئيس مجلس الإدارة
-                                أمين منطقة عـسـير
-                                <strong>م . عبدالله بن مهدي الجالي
-                                </strong>
-                            </p>
+                            <p class="text-[#a37957]">كــلــمــة رئيس مجلس الإدارة</p>
                         </div>
-                        <p class="text-[#fff]  text-sm">إنما تشهده منطقة عسير من عملية تنموية شاملة ،
-                            وبرعاية مباشرة من القيادة الكريمة أعزها الله ، شأنها في
-                            ذلك شأن بقية المناطق الإدارية الأخرى ، تبشر بمستقبل
+                        <p class="text-[#255b51]  lg:text-lg">إنما تشهده منطقة عسير من عملية تنموية شاملة ،
+                            وبرعاية مباشرة من القيادة الكريمة أعزها الله ، تبشر بمستقبل
                             واعد ستنعم به المنطقة ، وستكون بإذن الله شركة قمم
-                            السراة أحد أهم الركائز الأساسية في هذه العملية
+                            السراة أحد الركائز الأساسية في هذه العملية
                             التنموية من خلال خلق بيئة استثمارية مرنة تتجلى في طرح
                             نماذج عمل متعددة لقطاع الأعمال ، لبناء شراكات
                             استراتيجية ترفع من جودة العمل البلدي والتي ستساهم
@@ -171,17 +165,17 @@
 </div>
     </section>
 
-    <div class="snap-start duration-1000">
+    <div class="snap-start duration-1000 snap-none	overflow-y-visible"  id="fixed-navbar1">
     <!-- about -->
     <section id="section2" class="lg:py-8 w-full relative overflow-hidden">
-        <div><img class="w-40 absolute top-[100px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
-        <div><img class="w-10 lg:w-24 absolute top-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div>
+        <!-- <div><img class="w-40 absolute top-[100px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
+        <div><img class="w-10 opacity-50 lg:w-24 absolute top-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div>
 
-        <div class="grid lg:grid-cols-3 px-8 lg:px-52 lg:h-screen place-items-center">
+        <div class="grid lg:grid-cols-3 px-8 lg:px-52  place-items-center">
             <div class="lg:pe-16 py-16 lg:col-span-2">
                 <div class="relative mb-4">
                     <!-- <span ><img class="w-4 absolute opacity-25" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span> -->
-                    <p class="text-[#a37957] ">___________ قمم السراة</p>
+                    <!-- <p class="text-[#a37957] ">___________ قمم السراة</p> -->
                     <h1 class="text-3xl font-bold text-[#255b51] py-4">نبذة عنا</h1>
                     <p class="lg:text-lg font-light text-[#255b51] py-2 mb-4">تعتبر الذراع الاستثماري لأمانة منطقة عسير
                         ذات أهداف تنموية
@@ -192,40 +186,13 @@
                         المزيد
                     </a>
                 </div>
-                <div>
-                    <div class="flex py-8 gap-8">
-                        <div class="flex">
-                            <div>
-                                <span><img class="w-6 me-4 opacity-25" src="./assets/icon-04.svg" width="100%"
-                                        height="100%" alt=""></span>
-                            </div>
-                            <div id="visionModalBtn">
-                                <button
-                                    class="text-3xl text-[#fff] py-3 px-5 bg-[#a37957] hover:bg-[#255b51] duration-300 rounded">الرؤية
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="flex">
-                            <div>
-                                <span><img class="w-6 me-4 opacity-25" src="./assets/icon-04.svg" width="100%"
-                                        height="100%" alt=""></span>
-                            </div>
-                            <div id="messageModalBtn">
-                                <button
-                                    class="text-3xl text-[#fff] py-3 px-5 bg-[#a37957] hover:bg-[#255b51] duration-300 rounded">الرسالة
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+              
             </div>
 
             <div class="lg:py-16">
                 <div>
                     <div>
-                        <p class="font-bold text-[#a37957]">___________ الأهداف الاستراتيجية </p>
+                        <p class="font-bold text-[#a37957]"> الأهداف الاستراتيجية </p>
                     </div>
                     <div class=" py-4 space-y-4">
                         <div class="flex">
@@ -267,29 +234,114 @@
                 </div>
             </div>
         </div>
-
-        <div id="message-modal" class="fixed hidden z-[9999] inset-0  duration-300 ">
-            <div class="grid place-items-center h-screen w-screen relative">
-                <div class="h-screen w-screen bg-[#0005] absolute z-0 "></div>
-                <div
-                    class="bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse px-8 py-8 grid place-items-center rounded-xl z-10 relative ">
-                    <div class="mx-2">
-                        <div class="mb-8 flex justify-center">
-                            <img class="w-20" src="./assets/logo/logo-01.svg" alt="">
+        <div class="w-full px-8 lg:px-52">
+            <div class="grid lg:grid-cols-2  lg:gap-8">
+                <div class="relative">
+                    <div class="card1">
+                        <div class="card-inner1  my-10">
+                        <div class="card-front1 grid place-items-center bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse ">
+                            <div class="mx-2">
+                                <div class="mb-8 flex justify-center">
+                                    <!-- <img class="w-20" src="./assets/logo/logo-01.svg" alt=""> -->
+                                </div>
+                                <div class="my-2 px-8 lg:px-16 place-items-center grid">
+                                    <h1 class="mb-2 font-bold text-2xl lg:text-4xl text-[#255b51]">رسالتنا</h1>
+                                    
+                                </div>
+                                
+                            </div>
                         </div>
-                        <div class="my-2 px-8 lg:px-16">
-                            <h1 class="mb-2 font-bold text-xl">رسالتنا</h1>
-                            <p class="">تطوير وتقديم مستوى متميز من الخدمات عن طريق تنفيذ
-                                مــشــاريـــع وبـــرامــــج نوعية بالشراكة مع القطاع الخاص</p>
+                        <div class="card-back1 bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse">
+                            <div class="mx-2">
+                                <div class="mb-8 flex justify-center">
+                                    <!-- <img class="w-20" src="./assets/logo/logo-01.svg" alt=""> -->
+                                </div>
+                                <div class="my-2 px-8 lg:px-16">
+                                    <p class="text-xl">
+                                        تطوير وتقديم مستوى متميز من الخدمات عن طريق تنفيذ مشاريع وبرامج نوعية بالشراكة مع القطاع الخاص
+                                    </p>
+                                </div>
+                                
+                            </div>
                         </div>
-                        <div id="messageClose" class="text-center flex justify-center">
-                            <button
-                                class="font-bold text-[#fff] py-3 px-4 bg-[#a37957] hover:bg-[#255b51] duration-300 rounded">إغلاق</button>
                         </div>
                     </div>
                 </div>
+                <div class="relative">
+                    <div class="card1">
+                        <div class="card-inner1  my-10">
+                        <div class="card-front1 grid place-items-center bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse ">
+                            <div class="mx-2">
+                                <div class="mb-8 flex justify-center">
+                                    <!-- <img class="w-20" src="./assets/logo/logo-01.svg" alt=""> -->
+                                </div>
+                                <div class="my-2 px-8 lg:px-16 place-items-center grid">
+                                    <h1 class="mb-2 font-bold text-2xl lg:text-4xl text-[#255b51]">رؤيتنا</h1>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card-back1 bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse">
+                            <div class="mx-2">
+                                <div class="mb-8 flex justify-center">
+                                    <!-- <img class="w-20" src="./assets/logo/logo-01.svg" alt=""> -->
+                                </div>
+                                <div class="my-2 px-8 lg:px-16">
+                                    <p class="text-xl">
+                                        الــريـــادة فــي تقديم الخدمات البلدية وتمكين المشاريع
+                التنموية لرفع جودة حياة المجتمع المحلي لمنطقة عسير
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+               
+
             </div>
         </div>
+
+        <!-- <div id="message-modal" class="fixed hidden z-[9999] inset-0  duration-300 ">
+            <div class="relative grid place-items-center h-screen w-screen">
+                <div class="card1">
+                    <div class="card-inner1  my-10">
+                    <div class="card-front1 grid place-items-center bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse ">
+                        <div class="mx-2">
+                            <div class="mb-8 flex justify-center">
+                                <img class="w-20" src="./assets/logo/logo-01.svg" alt="">
+                            </div>
+                            <div class="my-2 px-8 lg:px-16 place-items-center grid">
+                                <h1 class="mb-2 font-bold text-2xl">رسالتنا</h1>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card-back1 bg-[url('./assets/pictures-03.jpg')] bg-cover bg-reverse">
+                        <div class="mx-2">
+                            <div class="mb-8 flex justify-center">
+                                <img class="w-20" src="./assets/logo/logo-01.svg" alt="">
+                            </div>
+                            <div class="my-2 px-8 lg:px-16">
+                                <p class="text-xl">
+                                    الــريـــادة فــي تقديم الخدمات البلدية وتمكين المشاريع
+        التنموية لرفع جودة حياة المجتمع المحلي لمنطقة عسير
+                                </p>
+                            </div>
+                            <div id="messageClose" class="text-center flex justify-center">
+                                <button
+                                    class="font-bold text-[#fff] py-3 px-4 bg-[#a37957] hover:bg-[#255b51] duration-300 rounded">إغلاق</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div> -->
 
         <div id="vision-modal" class="fixed hidden z-[9999] inset-0  duration-300 ">
             <div class="grid place-items-center h-screen w-screen relative">
@@ -325,67 +377,45 @@
     <!-- team  -->
 
     <section id="section" class="bg-[url('./assets/pictures-02.jpg')] bg-cover bg-no-repeat bg-center bg-fixed  w-full relative overflow-hidden ">
-        <div><img class="w-40 absolute top-[50px] left-[-50px]" src="./assets/circles-05.svg" alt=""></div>
+        <!-- <div><img class="w-40 absolute top-[50px] left-[-50px]" src="./assets/circles-05.svg" alt=""></div> -->
         <!-- <div><img class="w-10 lg:w-24 absolute top-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div> -->
         <div class=" bg-gradient-to-b from-[#253d38aa] via-[#253d3877] to-[#253d38aa] ">
         <div class="grid md:grid-cols-2 px-8 lg:px-52 ">
             <div class="lg:pe-16 py-16 ">
                 <div class="relative mb-8 px-4">
                     <!-- <span ><img class="w-4 absolute opacity-25" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span> -->
-                    <p class=" text-[#a37957]">___________ قمم السراة</p>
-                    <h1 class="text-3xl font-bold text-[#fff] py-4">القيادة والإدارة العليا</h1>
-                    <p class="lg:text-lg font-light text-[#fff] py-2 mb-4">
-
-                    </p>
-                    <a href="team.html"
+                    <!-- <p class=" text-[#a37957]">___________ قمم السراة</p> -->
+                    <h1 class="text-3xl font-bold text-[#fff] py-8"> الخدمات الاستثمارية  </h1>
+                    
+                    <a href="services.html"
                         class=" bg-[#a37957] hover:bg-[#fff] text-[#fff] hover:text-[#255b51] font-bold py-2 px-4 rounded duration-300">
                         المزيد
                     </a>
                 </div>
                 <div class="grid ">
-                    <div class="flex flex-col ">
-                        <!-- <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span> -->
-                        <div class="flex px-4 mb-4">
-                        <div class="flex justify-center lg:justify-start  mb-4"><img class=" lg:w-40 "
-                                src="./assets/team/New folder/team-01.jpg" width="100%" height="100%" alt=""></div>
-                        <div>
-                            <div class="lg:ps-4">
-                            <p class="text-center lg:text-start text-[#fff]">
-                                م.عبدالله بــن مــهـدي الــجــــالــــي
-                            </p>
-                            <p class="text-[#a37957] text-center lg:text-start">
-                                رئيس مجلس الإدارة
+                    <div class=" py-4 space-y-4 text-[#fff]">
+                        <div class="flex">
+                            <span><img class="w-3 me-4 opacity-50" src="./assets/icon-01.svg" width="100%" height="100%"
+                                    alt=""></span>
+                            <p >
+                                فرص الأصول البلدية والعقود الاستثمارية
                             </p>
                         </div>
+                        <div class="flex">
+                            <span><img class="w-3 me-4 opacity-50" src="./assets/icon-01.svg" width="100%" height="100%"
+                                    alt=""></span>
+                            <p >
+                                فرص عقود الخدمات البلدية
+                            </p>
                         </div>
-                    </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <!-- <span ><img class="w-3 me-8 opacity-50" src="./assets/icon-04.svg" width="100%" height="100%" alt=""></span> -->
-                        <div class="flex px-4 mb-4">
-                            <div class="flex justify-center lg:justify-start  mb-4"><img class="  "
-                                    src="./assets/team/New folder/team-02.jpg" width="100%" height="100%" alt=""></div>
-                            <div class="lg:ps-4">
-                                <p class="text-center lg:text-start text-[#fff]">
-                                    أ. طارق بــن عبدالهادي القـحـطانـي
-                                </p>
-                                <p class="text-[#a37957] text-center lg:text-start">
-                                    نائب رئيس مجلس الإدارة
-                                </p>
-                            </div>
+                        <div class="flex">
+                            <span><img class="w-3 me-4 opacity-50" src="./assets/icon-01.svg" width="100%" height="100%"
+                                    alt=""></span>
+                            <p >
+                                فرص الشراكات مع القطاع الخاص
+                            </p>
                         </div>
-                        <div class="flex px-4">
-                            <div class="flex justify-center lg:justify-start  mb-4"><img class="  "
-                                    src="./assets/team/New folder/team-10.jpg" width="100%" height="100%" alt=""></div>
-                            <div class="lg:ps-4">
-                                <p class="text-center lg:text-start text-[#fff]">
-                                    أ.فـــايـــز بـــن ســعــيــد الشهراني
-                                </p>
-                                <p class="text-[#a37957] text-center lg:text-start">
-                                    الرئيس التنفيذي
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -407,7 +437,7 @@
     <!-- blog -->
     <section class="w-full relative overflow-hidden">
         <!-- <div><img class="w-40 absolute top-[10px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
-        <div><img class="w-40 absolute top-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
+        <!-- <div><img class="w-40 absolute top-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
         <!-- <div><img class="w-10 lg:w-24 absolute bottom-[0] left-[0]" src="./assets/icon-01.svg" alt=""></div> -->
 
 
@@ -416,7 +446,7 @@
                 <div class="grid ">
                     <div class=" relative p-8">
 
-                        <p class=" text-[#a37957]">____________ قمم السراة </p>
+                        <!-- <p class=" text-[#a37957]">____________ قمم السراة </p> -->
                         <h1 class="text-3xl font-bold text-[#255b51] py-4 mb-8">الأخبار</h1>
                         <!-- <p class="text-lg font-light text-[#255b51] py-2 w-auto lg:w-2/3">
 
@@ -503,9 +533,9 @@
         <section class="mt-20  w-full relative overflow-hidden">
         
 
-            <div><img class="w-40 absolute top-[10px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
-            <div><img class="w-40 absolute bottom-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div>
-            <div><img class="w-10 lg:w-24 absolute top-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div>
+            <!-- <div><img class="w-40 absolute top-[10px] left-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
+            <!-- <div><img class="w-40 absolute bottom-[20px] right-[-50px]" src="./assets/circles2-05.svg" alt=""></div> -->
+            <div><img class="w-10 opacity-50 lg:w-24 absolute top-[0] right-[0]" src="./assets/icon-01.svg" alt=""></div>
     
     
             <div>
@@ -516,8 +546,8 @@
                            
     
                             <div>
-                            <p class=" text-[#a37957]">____________ قمم السراة </p>
-                            <h1 class="text-3xl font-bold text-[#255b51] py-4">لنبقى على تواصل </h1>
+                            <!-- <p class=" text-[#a37957]">____________ قمم السراة </p> -->
+                            <h1 class="text-3xl font-bold text-[#255b51] py-4">التواصل </h1>
                             <!-- <p class="text-lg font-light text-[#255b51] py-2 w-auto lg:w-2/3">
     
                             </p> -->
@@ -528,63 +558,97 @@
                         </div>
                         </div> -->
                     </div>
-                            <div class=" grid gap-8 md:grid-cols-3 text-[#255b51]  overflow-hidden">
-                                <a href="" class="grid place-items-center px-1 py-8 border border-[#255b51] rounded-xl bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-[#a3795722] via-gray-100 to-[#a3795770] hover:bg-[#a3795755] duration-300">
-                                    <div class="flex">
-                                    <!-- <span><img class="w-3 me-4 opacity-50" src="./assets/icon-04.svg" width="100%"
-                                            height="100%" alt=""></span> -->
-                                    <span class="text-[#a37957] text-5xl material-symbols-outlined">
-                                        phone
-                                    </span>
-                                    </div>
-                                    <p class="text-xs">
-                                        [phone number]
-                                    </p>
-                                    <p class="text-xl">
-                                        +966998*******
-                                    </p>
-                                </a>
-                                <a href="" class="grid place-items-center px-1 py-8 border border-[#255b51] rounded-xl bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-[#a3795722] via-gray-100 to-[#a3795770] hover:bg-[#a3795755] duration-300">
-                                    <div class="flex">
-                                    <!-- <span><img class="w-3 me-4 opacity-50" src="./assets/icon-04.svg" width="100%"
-                                            height="100%" alt=""></span> -->
-                                    <span class="text-[#a37957] text-5xl material-symbols-outlined">
-                                        fax
-                                    </span>
-                                    </div>
-                                    <p class="text-xs">
-                                        [fax]
-                                    </p>
-                                    <p class="text-xl">
-                                        +966998*******
-                                    </p>
-                                </a>
-                                <a href="" class="grid place-items-center px-1 py-8 border border-[#255b51] rounded-xl bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-[#a3795722] via-gray-100 to-[#a3795770] hover:bg-[#a3795755] duration-300">
-                                    <div class="flex">
-                                    <!-- <span><img class="w-3 me-4 opacity-50" src="./assets/icon-04.svg" width="100%"
-                                            height="100%" alt=""></span> -->
-                                    <span class="text-[#a37957] text-5xl material-symbols-outlined">
-                                        email
-                                    </span>
-                                    </div>
-                                    <p class="text-xs">
-                                        [email]
-                                    </p>
-                                    <p class="text-xl">
-                                        info@example.com
-                                    </p>
-                                </a>
+                            <div class=" grid gap-8 md:grid-cols-2 text-[#255b51] place-items-center">
+                                    <div class="card">
+                                        <div class="card-inner">
+                                          <div class="card-front grid place-items-center">
+                                            <div class="">
+                                                <span class=" text-5xl material-symbols-outlined">
+                                                    phone
+                                                </span>
+                                                <p class="text-xs">
+                                                    رقم الهاتف
+                                                </p>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="card-back">
+                                            <a href="tel:+966998*******" class="text-xl">
+                                                +966998*******
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- <div class="card">
+                                        <div class="card-inner">
+                                          <div class="card-front grid place-items-center">
+                                            <div class="">
+                                                <span class=" text-5xl material-symbols-outlined">
+                                                    fax
+                                                </span>
+                                                <p class="text-xs">
+                                                    الفاكس
+                                                </p>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="card-back">
+                                            <a href="fax:+966998*******" class="text-xl">
+                                                +966998*******
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div> -->
+                                    <div class="card">
+                                        <div class="card-inner">
+                                          <div class="card-front grid place-items-center">
+                                            <div class="">
+                                                <span class=" text-5xl material-symbols-outlined">
+                                                    email
+                                                </span>
+                                                <p class="text-xs">
+                                                    الايميل
+                                                </p>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="card-back">
+                                            <a href="mailto:info@example.com" class="text-xl">
+                                                info@example.com
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
                             </div>
     
                         </div>
                         
                     </div>
                     
-                    <div class="grid h-[400px]  py-8">
-    
-                        <div class="h-full shadow-lg">
+                    <div class="grid w-full  place-items-center ">
+                  
+
+                            <div class="card1">
+                                <div class="card-inner1 flex items-center justify-center ">
+                                  <div class="card-front1">
+                                    
+                                        <a target="_blank" href="https://www.google.com/maps/place/18%C2%B013'03.5%22N+42%C2%B029'56.2%22E/@18.2174507,42.4995506,18z/data=!4m4!3m3!8m2!3d18.2176389!4d42.4989444?hl=ar&entry=ttu"><img class="w-40 trans" src="./Assets/socialMedia/location copy.svg" alt="location"></a>
+                                 
+                                    
+                                  </div>
+                                  <div class="card-back2">
+                                    <a target="_blank" href="https://www.google.com/maps/place/18%C2%B013'03.5%22N+42%C2%B029'56.2%22E/@18.2174507,42.4995506,18z/data=!4m4!3m3!8m2!3d18.2176389!4d42.4989444?hl=ar&entry=ttu"><img class="w-40 trans" src="./Assets/socialMedia/location copy.svg" alt="location"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                     
+                        
+
+                        <!-- <div class="h-full shadow-lg ">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3789.8320526336024!2d42.498947!3d18.21764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDEzJzAzLjUiTiA0MsKwMjknNTYuMiJF!5e0!3m2!1sar!2s!4v1702137947295!5m2!1sar!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        </div> -->
                         <!-- <div class="p-8 lg:p-32 relative">
                             <img src="assets/undraw_map_re_60yf.svg" alt="">
                         </div> -->
@@ -596,64 +660,45 @@
         </section>
     
 
+ <!-- footer -->
 
-    <!-- footer -->
-
-    <footer>
-        <div class="bg-cover bg-center">
-            <div class="bg-gradient-to-b from-[#255b51] via-[#255b51] to-[#255b51ee] ">
-                <div class="grid place-items-center py-16">
-                    <a href="./index.html">
-                        <img class="w-40" src="./assets/logo/logo-02.svg" alt="">
-                    </a>
-                    <div class="py-8">
-                        <div class="flex gap-4">
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/facebook-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/twitter-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/instagram-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/youtube-01.svg" alt=""></a>
-                            <a href="#"><img class="w-8" src="./Assets/socialMedia/linkedin-01.svg" alt=""></a>
-                        </div>
+ <footer>
+    <div class="bg-cover bg-center">
+        <div class="bg-gradient-to-b from-[#255b51] via-[#255b51] to-[#255b51ee] ">
+            <div class="grid place-items-center py-16">
+                <a href="./index.html">
+                    <img class="w-40" src="./assets/logo/logo-02.svg" alt="">
+                </a>
+                <div class="py-8">
+                    <div class="flex gap-4">
+                        <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/facebook-01.svg" alt="facebook"></a>
+                        <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/x.svg" alt="twitter"></a>
+                        <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/instagram-01.svg" alt="instagram"></a>
+                        <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/youtube-01.svg" alt="youtube"></a>
+                        <a target="_blank" href="#"><img class="w-8" src="./Assets/socialMedia/linkedin-01.svg" alt="linkedin"></a>
+                        <a target="_blank" href="https://www.google.com/maps/place/18%C2%B013'03.5%22N+42%C2%B029'56.2%22E/@18.2174507,42.4995506,18z/data=!4m4!3m3!8m2!3d18.2176389!4d42.4989444?hl=ar&entry=ttu"><img class="w-8" src="./Assets/socialMedia/location.svg" alt="location"></a>
                     </div>
-
-                    <ul class="py-2 text-[#fff] text-xs lg:text-lg gap-2 lg:gap-4 flex flex-warp">
-                        <a href="./index.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الرئيسية</a>
-                        <a href="./about.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">نبذة عنا</a>
-                        <a href="./services.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الاعمال</a>
-                        <a href="./team.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الإدارة العليا</a>
-                        <a href="./blog.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">الأخبار</a>
-                        <a href="./contact.html"
-                            class="hover:text-[#a37957] duration-300 border-b-2 border-[#a37957] hover:border-[#a37957] "
-                            id="">التواصل</a>
-                    </ul>
-                    <div class="py-2 flex text-[#fff] text-center text-xs items-center">
-
-                        <p>2023 جميع الحقوق محفوظة لشركة <a href="index.html" class="uppercase">قمم السّراة</a> </p>
-                        <span class="px-2 material-symbols-outlined">
-                            copyright
-                        </span>
-                    </div>
-
-                    <!-- <div class="py-2 text-[#fff] text-center text-xs flex">
-                        <p class="px-1"> تمت برمجة الموقع بواسطة</p>
-                        <a class="px-1 uppercase font-bold"
-                            href="https://www.linkedin.com/in/ahmad-zakaria-hanifa-58094522a/" target="_blank">ahmad
-                            team</a>
-                    </div> -->
                 </div>
+
+                 
+                <div class="py-2 flex text-[#fff] text-center text-xs items-center">
+
+                    <p>2023 جميع الحقوق محفوظة لشركة <a href="index.html" class="uppercase">قمم السّراة</a> </p>
+                    <span class="px-2 material-symbols-outlined">
+                        copyright
+                    </span>
+                </div>
+
+                <!-- <div class="py-2 text-[#fff] text-center text-xs flex">
+                    <p class="px-1"> تمت برمجة الموقع بواسطة</p>
+                    <a class="px-1 uppercase font-bold"
+                        href="https://www.linkedin.com/in/ahmad-zakaria-hanifa-58094522a/" target="_blank">ahmad
+                        team</a>
+                </div> -->
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
@@ -667,8 +712,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/tailwind.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
